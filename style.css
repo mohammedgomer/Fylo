@@ -379,6 +379,7 @@ order: 2;
   align-items: center;
   text-align: left;
   padding: 6rem;
+  gap: 5rem;
 }
 
 .signup-section > * {
@@ -402,6 +403,12 @@ order: 2;
 
 footer {
   flex-direction: row;
+  align-items: center;
+  padding: 8rem;
+}
+
+footer > * {
+  flex-basis: 50%;
 }
 
 
