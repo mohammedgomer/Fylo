@@ -23,23 +23,20 @@
 
 --contain: 0 2rem;
 
---fs-xl: 3rem;
---fs-600: 1.5rem;
---fs-400: 1rem;
-
-
-
+--fs-medium: clamp(1rem, 2vw + 0.3rem, 2rem);
+--fs-xl: clamp(1.5rem, 2vw + 0.3rem, 3rem);
 }
 
 body {
-  font-family: var(--f-body);
-
+  font-family: var(--f-body); 
+  font-size: var(--fs); 
 }
 
 h1, 
 h2, 
 h3 {
   font-family: var(--f-heading);
+  font-size: var(--fs-xl);
 }
 
 a {
@@ -67,7 +64,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   font-family: var(--f-heading);
-  font-size: var(--fs-400);
   gap: 1.5rem;
   margin-top: 1.5rem; 
   padding: var(--contain);
@@ -85,6 +81,8 @@ nav a {
 .cta {
  padding: var(--contain);
 margin-top: 5rem;
+display: flex;
+flex-direction: column;
 }
 
 img {
@@ -100,6 +98,11 @@ margin: 0 auto;
 }
 .cta-info p {
  margin-top: 1.5rem;
+}
+
+.cta-form {
+  display: flex;
+  flex-direction: column;
 }
  input {
   padding: 0.7rem;
@@ -144,7 +147,6 @@ padding-bottom: 5rem;
   padding: var(--contain);
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
 .cta-2-h3 {
   margin-top: 3rem;
@@ -152,6 +154,8 @@ padding-bottom: 5rem;
 .cta-2 img {
   margin-top: 1rem;
 }
+
+
 
 .cta-2 button {
 cursor: pointer;
@@ -206,6 +210,10 @@ left: 1rem;
 }
 .profile-info {
 margin-top: 2.5rem;
+}
+
+.profile-info div:first-of-type {
+  font-weight: 700;
 }
 
 .signup-section {
@@ -278,6 +286,10 @@ footer p {
   gap: 0.5rem;
 }
 
+.footer-sec-1 div:first-of-type{
+  margin-top: 1.5rem;
+}
+
 .footer-sec-4 {
   flex-direction: row;
   gap: 1rem;
@@ -292,4 +304,106 @@ footer p {
   border: 0.5px solid #fff;
   border-radius: 50%;
   padding: 0.5rem;
+}
+
+@media(min-width: 40em) {
+  .nav-items {
+    gap: 5rem;
+  }
+.cta {
+  flex-direction: row;
+}
+.cta > * {
+  flex-basis: 50%;
+}
+.cta-info {
+  text-align: left;
+}
+.cta-illustration {
+  order: 2;
+}
+
+.cta-form {
+  flex-direction: row;
+ align-items: end;
+ gap: 1rem;
+}
+.cta-form input {
+width: 70%;
+}
+.cta-form button {
+width: 30%;
+}
+
+.cta-2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  background: url(/images/bg-curve-desktop.svg);
+  left: 0;
+  top: -50px;
+  height: 50px;
+  background-size: cover;
+}
+
+.cta-2-items {
+  flex-direction: row;
+}
+.cta-2-items > * {
+  flex-basis: 50%;  
+}
+
+.cta-2-info {
+  text-align: left;
+}
+
+.cta-2-info p {
+  margin-top: 1.5rem;
+}
+
+.cta-2 button {
+  margin-left: 0;
+}
+
+.cta-2-illustration {
+order: 2;
+}
+
+.testimonial {
+  width: 60%;
+}
+
+.signup-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  padding: 6rem;
+}
+
+.signup-section > * {
+  flex-basis: 50%;
+}
+
+.signup-section h3 + p {
+  margin-top: 1rem;
+}
+
+.signup-section input {
+  width: 80%;
+}
+
+.signup-section input {
+  width: 80%;
+}
+.signup-section button {
+  width: 40%;
+}
+
+footer {
+  flex-direction: row;
+}
+
+
+
 }

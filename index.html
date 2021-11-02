@@ -13,7 +13,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
@@ -54,15 +56,19 @@
 
 
     <section class="cta">
-
-      <img src="/images/illustration-1.svg" alt="">
+      <div class="cta-illustration">
+        <img src="/images/illustration-1.svg" alt="">
+      </div>
       <div class="cta-info text-center">
         <h1>All your files in one secure location, accessible anywhere.</h1>
         <p> Fylo stores your most important files in one secure location.
           Access them wherever you need, share and collaborate with friends,
           family, and co-workers.</p>
-        <input type="email" placeholder="Enter your email...">
-        <button>Get Started</button>
+        <div class="cta-form">
+          <input type="email" placeholder="Enter your email...">
+          <button>Get Started</button>
+        </div>
+
       </div>
     </section>
 
@@ -76,52 +82,57 @@
 
       <div class="cta-2-items">
 
-        <img src="/images/illustration-2.svg" alt="">
+        <div class="cta-2-illustration">
+          <img src="/images/illustration-2.svg" alt="">
+        </div>
 
-        <h3 class="cta-2-h3">Stay productive, wherever you are</h3>
+        <div class="cta-2-info">
+          <h3 class="cta-2-h3">Stay productive, wherever you are</h3>
 
-        <p> Never let location be an issue when accessing your files. Fylo has you
-          covered for all of your file storage needs.</p>
+          <p> Never let location be an issue when accessing your files. Fylo has you
+            covered for all of your file storage needs.</p>
 
-        <p>Securely share files and folders with friends, family and colleagues for
-          live collaboration. No email attachments required!
-        </p>
-
-        <button> See how Fylo works <img src="/images/icon-arrow.svg" alt="">
-        </button>
-
-
-
-        <div class="testimonial">
-          <img src="/images/icon-quotes.svg" alt="" class="quotes">
-          <p> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-            become a well-oiled collaboration machine.
+          <p>Securely share files and folders with friends, family and colleagues for
+            live collaboration. No email attachments required!
           </p>
 
-          <div class="profile">
-            <img src="/images/avatar-testimonial.jpg" alt="">
-            <div class="profile-info">
-              <div>
-                <h3> Kyle Burton</h3>
+          <button> See how Fylo works <img src="/images/icon-arrow.svg" alt="">
+          </button>
+
+
+
+          <div class="testimonial">
+            <img src="/images/icon-quotes.svg" alt="" class="quotes">
+            <p> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+              become a well-oiled collaboration machine.
+            </p>
+
+            <div class="profile">
+              <img src="/images/avatar-testimonial.jpg" alt="">
+              <div class="profile-info">
+                <div>
+                  <p> Kyle Burton</p>
+                </div>
+                <div>
+                  <p> Founder & CEO, Huddle</p>
+                </div>
               </div>
-              <div>
-                <p> Founder & CEO, Huddle</p>
-              </div>
+
             </div>
-
-
           </div>
         </div>
-      </div>
 
     </section>
 
     <section class="signup-section text-center">
-      <h3> Get early access today</h3>
 
-      <p> It only takes a minute to sign up and our free starter tier is extremely generous.
-        If you have any questions, our support team would be happy to help you.
-      </p>
+      <div>
+        <h3> Get early access today</h3>
+
+        <p> It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </div>
 
       <div class="signup-form">
         <div>
@@ -139,8 +150,8 @@
       <div class="footer-sec-1">
         <img src="/images/logo2.png" alt="" class="footer-logo">
         <div>
-          <img src="/images/icon-phone.svg" alt="">Phone:
-          <p>+1-543-123-4567</p>
+          <img src="/images/icon-phone.svg" alt="">
+          <p>Phone: +1-543-123-4567</p>
         </div>
         <div>
           <img src="/images/icon-email.svg" class="email-icon" alt="">
@@ -153,11 +164,6 @@
         <a href="">Jobs</a>
         <a href="">Press</a>
         <a href="">Blog</a>
-
-
-
-
-
       </div>
 
       <div class="footer-sec-3">
